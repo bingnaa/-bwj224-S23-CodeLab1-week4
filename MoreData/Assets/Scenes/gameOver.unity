@@ -254,11 +254,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 585a586761e88474487d145f6ff9eb79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreTexts: {fileID: 1436541936}
   currentLevel: 0
   slimeB: 0
   targetSl: 1
   health: 100
+  final: n/a
   highScores: 
 --- !u!4 &1063155031
 Transform:
@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 1436541938}
   - component: {fileID: 1436541937}
   - component: {fileID: 1436541936}
+  - component: {fileID: 1436541939}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -410,6 +411,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0.00000095367, y: 20.16}
   m_SizeDelta: {x: 200, y: 40.32}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1436541939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436541935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bd6c08d23f5b247b3019e6d4391430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTexts: {fileID: 1436541936}
 --- !u!1 &1470628076
 GameObject:
   m_ObjectHideFlags: 0

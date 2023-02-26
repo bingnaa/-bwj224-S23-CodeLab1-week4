@@ -19,8 +19,6 @@ public class GameManager : MonoBehaviour
     private const string DIR_DATA = "/Data/";
     private const string FILE_MODE = "mode.txt";
     private string PATH_MODE;
-    
-    public TMP_Text scoreTexts;
 
     string FILE_PATH;
     const string FILE_NAME = "highScores.txt";
@@ -31,6 +29,7 @@ public class GameManager : MonoBehaviour
     public int slimeB = 0;
     public int targetSl = 1;
     public int health = 100;
+    public string final = "n/a";
 
     public int Mode
     {
@@ -99,8 +98,8 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene("Scenes/gameOver");
             sceneLoaded = true;
+            UpdateHighScores();
         }
-        UpdateHighScores();
     }
 
     void UpdateHighScores()
@@ -143,6 +142,6 @@ public class GameManager : MonoBehaviour
             highScoreStr += highScores[i] + "\n";
         }
         File.WriteAllText(FILE_PATH, highScoreStr);
-        scoreTexts.text = "" + highScoreStr;
+        final = highScoreStr;
     }
 }
