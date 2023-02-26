@@ -109,11 +109,11 @@ public class GameManager : MonoBehaviour
         {
             if (File.Exists(FILE_PATH))
             {
-                string fileContents = File.ReadAllText(FILE_PATH);
-                string[] fileSplit = fileContents.Split('\n');
-                for (int i = 1; i < fileSplit.Length - 1; i++)
+                string fileC = File.ReadAllText(FILE_PATH);
+                string[] fileSp = fileC.Split('\n');
+                for (int i = 1; i < fileSp.Length - 1; i++)
                 {
-                    highScores.Add(Int32.Parse(fileSplit[i]));
+                    highScores.Add(Int32.Parse(fileSp[i]));
                 }
             }
             else
