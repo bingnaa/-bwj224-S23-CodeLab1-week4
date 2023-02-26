@@ -1,5 +1,3 @@
-# FILL IN INFO ABOUT YOUR GAME HERE. 
+# Data Directory Practice with Lists
 
-DO NOT LEAVE IT LIKE THIS!!!
-
-Please? Please, give me content. I'm begging you. It's not that hard. Thanks.
+Continued building on game from last week: now has a high score list that displays the top 3 scores at the beginning screen. Tried to implement it to also show the scores at the GameOver Screen but because the Game Manager is an instance, text display doesn't work as intended.
